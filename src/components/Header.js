@@ -24,13 +24,9 @@ class Header extends React.Component {
           return [
             <div>
               <NavLink to="/" activeClassName="is-active" exact={true}> Home</NavLink>
-              <NavLink to="/users" activeClassName="is-active"> Users</NavLink>
-
 
                <NavLink to="/user-create" activeClassName="is-active" > Create User</NavLink>
-
-
-
+               
               <NavLink to="/signout" onClick={this.signoutUser.bind(this)}> Sign Out</NavLink>
             </div>
           ];
