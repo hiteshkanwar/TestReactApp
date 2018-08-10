@@ -51,6 +51,7 @@ class UserListItem extends React.Component {
   
 
   render(){
+    debugger
  return (
       <li>
         <div style={{display: this.state.showForm ? 'none' : 'block'}}>
@@ -59,7 +60,7 @@ class UserListItem extends React.Component {
          <button onClick={this.toggleForm}
          >Edit</button>
          <button onClick={(e)=>{
-           dispatch(removeUser({id}));
+           this.props.dispatch(removeUser(this.props.user));
          }}
          >Remove</button>
        </div>

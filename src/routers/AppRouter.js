@@ -24,7 +24,6 @@ const AppRouter = () => (
 	       <Route path='/signin' component={SignIn} />
 	       <Route path='/signout' component={SignIn} />
 	       <Route component={NotFound}/>
-
 	     </Switch>
 	  </div>
    </Router>

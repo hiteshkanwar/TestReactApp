@@ -45,15 +45,15 @@ import { withRouter } from 'react-router'
    
      return(
       <div>
+      <h2>Create New User</h2>
        { this.state.error && <p>{this.state.error}</p>}
-       <form className='add-option' onSubmit={this.handleSubmit}>
+       <form className='add-option' onSubmit={this.handleSubmit}> <br/><br/>
            <label>Email:</label>
-           <input type="email" name="email" value={this.state.email} onChange = {this.onTitleChange} className='add-option-input'/>
+           <input type="email" name="email" value={this.state.email} onChange = {this.onTitleChange} className='add-option-input'/><br/><br/>
            <label>Password:</label>
-           <br />
            <input type="password" name="password" value={this.state.password} onChange = {this.onDescriptionChange} className='add-option-input'/>
           
-           
+           <br/><br/>
            <button className='button'>ADD USER</button> 
          </form>
          </div>

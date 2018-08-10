@@ -1,4 +1,4 @@
-class RemoveUserApi {  
+class RemoveUserApi {
    static removeUser(user) {
     const request = new Request(`http://localhost:3000/users/delete?id=${user.id}`, 
     {
